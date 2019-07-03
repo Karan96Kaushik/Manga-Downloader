@@ -23,10 +23,13 @@ function getPic(page_link) {
 
 		response.on('end', () => {
 
+			//console.log(tempfile)
+
 			fs.readFile('./temp.jpg', function (err, buf) {
 				var configsFile = buf.toString();
 
 				var root = HTMLParser.parse(configsFile);
+				console.log(configsFile);
 				try {
 					var image_link = (root.querySelector('.attachment-image').childNodes[0].rawAttrs).split('"')[1];
 					var next_link = (root.querySelector('.next-link').childNodes[0].rawAttrs).split("'")[1];

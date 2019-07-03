@@ -4,8 +4,24 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+	"rebuild": "electron-rebuild -f -w images-to-pdf"
+},
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "child_process": "^1.0.2",
+    "electron": "^5.0.4",
+    "events": "^3.0.0",
+    "express": "^4.17.1",
+    "images-to-pdf": "^1.0.3",
+    "ip": "^1.1.5",
+    "node-html-parser": "^1.1.15",
+    "util": "^0.12.0"
+  },
+  "devDependencies": {
+    "electron-rebuild": "^1.8.5"
+  }
 }

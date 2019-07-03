@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport">
+	<script src="jquery.js"></script>
+	<title> Manga Downloader</title>
+</head>
+
+<body bgcolor="white">
+	<div id="app">
+		<!--<h1> {{ name }}	</h1>-->
+		<img src="manga.png" alignment="center" alt="" width="100%" height="auto" left="5">
+		<input placeholder="Search" name="name" id="tagText" onclick="">
+		<br>
+		<select id="optionss" name="manga_name" onchange="selected()"></select>
+		<h3> {{ mn_name }}	</h3>
+		<select id="ch_options" name="ch_name" onchange=""></select>
+		<button onclick="ch_next()">Next</button>
+		<br>
+		<button onclick="ch_select()"> Download </button>
+	</div>
+
+	<script src="vue.js"></script>
+	<script src="main_vue.js"></script>
+	<script src="search.js"></script>
+</body>
+
+</html>

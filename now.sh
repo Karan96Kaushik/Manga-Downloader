@@ -1,5 +1,5 @@
 #!/bin/bash
 # A simple variable example
 myvariable=$(xclip -o)
-node manga-test2 $myvariable
+node newPdfTest $myvariable
 echo $myvariable
