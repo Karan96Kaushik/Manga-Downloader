@@ -1,3 +1,4 @@
-node-modulde/electron/
-Downloads/
+node-modules/electron/*
+node-modules/electron/
+Downloads/*
 *.jpg

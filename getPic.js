@@ -1,4 +1,4 @@
-const save_image = require('./save_pic');
+const save_image = require('./src/save_pic');
 
 var args = process.argv;
 

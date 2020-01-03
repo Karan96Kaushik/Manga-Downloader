@@ -42,7 +42,7 @@ function Backend() {
 		});
 
 		expr.get('/', function (req, res) {
-			res.sendFile(__dirname + '/index.html');
+			res.sendFile(__dirname + '/HTML/index.html');
 		});
 
 		expr.get('/chapters:id', function (req, res) {
